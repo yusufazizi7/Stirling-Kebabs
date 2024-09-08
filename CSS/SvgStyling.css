@@ -1,0 +1,24 @@
+.Cpaths {
+    opacity: 0;
+    fill: none;
+}
+
+  
+
+  
+
+.logoContent {
+
+    fill: white;
+}
+
+.rect {
+
+    fill: transparent;
+}
+
+.allContent:hover .logoContent {
+
+    fill: aqua;
+
+}
