@@ -442,6 +442,52 @@ footer {
 }
 
 
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(-100%); /* Fully hide the sidebar */
+    transition: transform 0.3s ease; /* Smooth transition */
+    z-index: 1000; /* Ensure it overlays other elements */
+}
+
+.sidebar.active {
+    transform: translateX(0); /* Slide the sidebar into view */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+#sidebarToggle {
+    cursor: pointer;
+    color: white;
+}
+
 
 
 @media (max-width: 770px) {
@@ -468,4 +514,43 @@ footer {
         flex-direction: initial; /* Reset to default */
         justify-content: initial; /* Reset to default */
     }
+
+    .about-us-section {
+        flex-direction: column; /* Stack the elements vertically */
+        align-items: center; /* Center items horizontally */
+        padding: 50px 20px; /* Adjust padding for mobile */
+    }
+
+    .aboutUsPhoto {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 300px; /* Set a reasonable max width */
+        margin-bottom: 20px; /* Add spacing between the image and text */
+    }
+
+    .textBox {
+        width: 90%; /* Adjust width for smaller screens */
+        max-width: 300px; /* Set a reasonable max width */
+        margin-left: 0; /* Remove overlap margin for mobile */
+        padding: 20px; /* Maintain good spacing */
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Slightly reduce shadow */
+    }
+
+    .textBox h1 {
+        font-size: 24px; /* Adjust font size for mobile */
+        margin-bottom: 10px; /* Adjust margin */
+    }
+
+    .textBox p {
+        font-size: 14px; /* Adjust font size for better readability */
+        line-height: 1.6; /* Increase line height slightly */
+    }
+
+    video {
+        
+        padding-top: 60px;
+        
+    }
 }
+
+
+
