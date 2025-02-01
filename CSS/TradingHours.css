@@ -1,0 +1,58 @@
+/* ===== TRADING HOURS SECTION ===== */
+.trading-hours-container {
+    text-align: center;
+    padding: 50px 10%;
+    background: #f9f9f9;
+    margin: 150px 0px;
+}
+
+body {
+    background-color: #f9f9f9;
+}
+
+.trading-hours-container h1 {
+    font-size: 3rem;
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+/* Table Styling */
+.trading-hours-table {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    box-shadow: var(--box-shadow);
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.trading-hours-table th,
+.trading-hours-table td {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.6rem;
+}
+
+.trading-hours-table th {
+    background: var(--black);
+    color: white;
+}
+
+/* Remove border for last row */
+.trading-hours-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Responsive Table - Stack on Mobile */
+@media (max-width: 768px) {
+    .trading-hours-container {
+        padding: 30px 5%;
+    }
+
+    .trading-hours-table th, .trading-hours-table td {
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+}

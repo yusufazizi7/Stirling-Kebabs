@@ -1,49 +1,67 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-
     <script src="https://kit.fontawesome.com/50f622582e.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/Index.css">
-    <title>Stirling Kebabs</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
+    <title>Gallery | Stirling Kebabs</title>
 </head>
-<body class="homePage">
+<body class="galleryPage">
 
-    <div class="navbar">
+    <!-- Header Section -->
+    <header>
+        <object class="SKlogo" data="Images/SKlogo.svg"></object>
 
-        <nav>
-            <object data="Images/SKlogo.svg" type="image/svg+xml"  class="SKlogo"></object>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Menu.html" >Menu</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="TradingHours.html">Trading Hours</a></li>
-                <li><a href="ContactUs.html">Contact us</a></li>
-            </ul>
-            
-
-            
-            
-            
-            
-
-            <i class="fa-solid fa-bars fa-2xl" id="sidebarToggle"></i>
-            
-
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Menu.html">Menu</a>
+            <a href="Trading-Hours.html">Opening Hours</a>
+            <a href="Contact-us.html">Contact us</a>
         </nav>
-    </div>
 
-    <div class="sidebar">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Menu.html">Menu</a></li>
-            <li><a href="Gallery.html">Gallery</a></li>
-            <li><a href="TradingHours.html">Trading Hours</a></li>
-            <li><a href="ContactUs.html">Contact us</a></li>
-        </ul>
-    </div>
+        <i id="menu-icon" class="fa-solid fa-bars"></i>
+    </header>
+
+    <!-- Gallery Section -->
+    <section class="gallery-container">
+        <h1>Our Delicious Food</h1>
+        <div class="gallery-grid">
+            <img src="Images/StirlingKebabs_Baklava.jpg" alt="Baklava" title="Baklava">
+            <img src="Images/StirlingKebabs_BeefBurger.jpg" alt="Beef Burger" title="Beef Burger">
+            <img src="Images/StirlingKebabs_Borek1.jpg" alt="Borek" title="Borek">
+            <img src="Images/StirlingKebabs_Borek.jpg" alt="Borek" title="Borek">
+            <img src="Images/StirlingKebabs_Chips.jpg" alt="Chips" title="Chips">
+            <img src="Images/StirlingKebabs_ChipsNoSauce.jpg" alt="Chips" title="Chips">
+            <img src="Images/StirlingKebabs_Hero.jpg" alt="Food" title="Food">
+            <img src="Images/StirlingKebabs_Gozleme.jpg" alt="Gozleme" title="Gozleme">
+            <img src="Images/StirlingKebabs_ComboMealLarge.jpg" alt="Large Combo Meal" title="Large Combo Meal">
+            <img src="Images/StirlingKebabs_ComboMealSmall.jpg" alt="Small Combo Meal" title="Small Combo Meal">
+  
+            <img src="Images/StirlingKebabs_MealBox.jpg" alt="Meal" title="Meal">
+            <img src="Images/StirlingKebabs_MeatBox.jpg" alt="Meat Box" title="Meat Box">
+            <img src="Images/StirlingKebabs_Kebab.jpg" alt="Food" title="Food">
+            <img src="Images/StirlingKebabs_Pide.jpg" alt="Pide" title="Pide">
+            <img src="Images/StirlingKebabs_Pizza.jpg" alt="Pizza" title="Pizza">
+            <img src="Images/StirlingKebabs_TurkishDelight.jpg" alt="Turkish Delight" title="Turkish Delight">
+            
+
+            
+        </div>
+    </section>
 
     
-    <script src="Scripts/index.js"></script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>© 2025 Stirling Kebabs | All Rights Reserved</p>
+            <p>34/478 Wanneroo Road, Westminster, WA 6061 | Phone: <a href="tel:+61894404872">(08) 9440 4872</a></p>
+        </div>
+    </footer>
+
+    <script defer src="Scripts/index.js"></script>
 </body>
 </html>
