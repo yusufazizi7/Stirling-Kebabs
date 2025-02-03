@@ -1,8 +1,13 @@
 /* ===== MENU SECTION ===== */
+
+body {
+    background-color: #f9f9f9;
+}
 .menu-container {
     text-align: center;
     padding: 50px 10%;
     background: #f9f9f9;
+    margin-top: 70px;
 }
 
 .menu-container h1 {
