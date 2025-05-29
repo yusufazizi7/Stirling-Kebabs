@@ -53,7 +53,7 @@ header {
     height: 80px;
 }
 
-.SKlogo {
+.website-logo {
     height: 60px;
 }
 
@@ -69,7 +69,7 @@ header .navbar a {
     border: .1rem solid transparent;
 }
 
-header .navbar a.active,
+
 header .navbar a:hover {
     color: #fff;
     border: .1rem solid rgba(205, 170, 124, 0.2);
@@ -189,7 +189,7 @@ header .navbar a:hover {
         padding: 1rem 5%;
     }
 
-    .SKlogo {
+    .website-logo {
         height: 50px;
     }
 
